@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "category": "jacket",
+        "name": "Өвлийн хүрэм",
+        "price": 120000,
+        "image": "jacket.jpg"
+    },
+    {
+        "id": 2,
+        "category": "shoes",
+        "name": "Сүүлийн үеийн гутал",
+        "price": 80000,
+        "image": "shoes.jpg"
+    },
+    {
+        "id": 3,
+        "category": "watch",
+        "name": "Загварын бугуйн цаг",
+        "price": 150000,
+        "image": "watch.jpg"
+    }
+] 

@@ -1,0 +1,179 @@
+:root {
+    --primary-color: #1E3A5F; /* Хөх өнгө */
+    --secondary-color: #2E8B57; /* Ногоон өнгө */
+    --text-color: #6C757D; /* Саарал өнгө */
+    --background-color: #F8F9FA; /* Цагаан өнгө */
+    --button-color: #1E3A5F; /* Товчны үндсэн өнгө */
+    --button-hover-color: #4C6A92; /* Товчны хулганы дээгүүр өнгө */
+    --section-background-color: #D9E9FF; /* Section арын өнгө */
+    --font-family: 'Arial', sans-serif; /* Фонтын төрөл */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+header img {
+    width: 2rem; /* Логогын хэмжээ */
+    height: auto;
+}
+
+header nav {
+    display: flex;
+    align-items: center; /* Төвлөрүүлэх */
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Flexbox ашиглах */
+}
+
+header nav ul li {
+    margin: 0 10px; /* Нэгжүүдийн хоорондын зай */
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: var(--secondary-color); /* Хулганы дээгүүр өнгө */
+}
+
+header div a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.main-content {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Distribute space evenly */
+    margin-bottom: 2rem; /* Space below */
+}
+
+.cart-section {
+    flex: 0 0 15%; /* Set to 15% of the screen width */
+    margin-right: 20px; /* Right margin for spacing */
+}
+
+.new-products-section {
+    flex: 0 0 70%; /* Center section takes 70% of the width */
+}
+
+#product-container {
+    display: flex;
+    flex-direction: column; /* Products stack vertically */
+    gap: 1rem; /* Space between products */
+}
+
+main {
+    padding: 2rem; /* Дээр болон доод зайг нэмэх */
+}
+
+section {
+    margin-bottom: 2rem; /* Section-ийн доор зайг нэмэх */
+    background-color: var(--section-background-color);
+    padding: 1.5rem;
+    border-radius: 10px; /* Дугуйрсан зах */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Сүүдэр */
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 1rem; /* Зай нэмэх */
+}
+
+.product {
+    background-color: white; /* Бүтээгдэхүүний фон */
+    padding: 1rem;
+    border-radius: 5px; /* Дугуйрсан зах */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Сүүдэр */
+    margin-bottom: 1rem; /* Бүтээгдэхүүний доор зайг нэмэх */
+}
+
+.product img {
+    width: 100%; /* Бүтээгдэхүүний зургийг 100% хэмжээтэй болгох */
+    border-radius: 5px; /* Дугуйрсан зах */
+}
+
+.product h3 {
+    font-size: 1.5rem; /* Бүтээгдэхүүний нэрийн хэмжээ */
+    margin: 0.5rem 0; /* Зай нэмэх */
+}
+
+.search-option {
+    position: absolute; /* Сайтад байрлал тогтоох */
+    background-color: white;
+    border: 1px solid #ccc; /* Хянах хязгаар */
+    z-index: 1000; /* Дээд зэрэглэлийн элемэнт */
+    width: calc(100% - 20px); /* Зургийн өргөн */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Сүүдэр */
+}
+
+.search-option-item {
+    padding: 10px; /* Дотор зай */
+    cursor: pointer; /* Хулганы курсорыг товчлох */
+}
+
+.search-option-item:hover {
+    background-color: #f0f0f0; /* Хулганы дээгүүр өнгө */
+}
+
+.cart-item {
+    display: flex; /* Use flex to align items */
+    justify-content: space-between; /* Space items evenly */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 1rem; /* Add space between items */
+}
+
+.cart-item button {
+    background-color: transparent; /* Transparent background */
+    border: none; /* No border */
+    color: red; /* Color for the 'x' button */
+    cursor: pointer; /* Pointer cursor */
+}
+
+.product p {
+    font-size: 1rem; /* Бүтээгдэхүүний үнийн хэмжээ */
+    color: var(--text-color);
+}
+
+.product button {
+    background-color: var(--button-color);
+    color: white; /* Текстийн өнгө */
+    padding: 10px 15px; /* Дотор зай */
+    border: none; /* Гадаад захын шугамгүй */
+    border-radius: 5px; /* Дугуйрсан зах */
+    cursor: pointer; /* Хулганы курсорыг товчлох */
+}
+
+.product button:hover {
+    background-color: var(--button-hover-color); /* Хулганы дээгүүр өнгө */
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
